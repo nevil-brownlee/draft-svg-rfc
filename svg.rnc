@@ -1,3 +1,5 @@
+#---  SVG 1.2 RFC rnc schema;  Nevil Brownlee, Thu 26 Jan 2016 (NZST)
+
 default namespace = "http://www.w3.org/2000/svg"
 namespace ns1 = "http://www.w3.org/1999/xlink"
 
@@ -101,7 +103,7 @@ svg =
       xsd:string "all" | xsd:string "forwardOnly"
     }?,
     (desc
-     | title
+     | svgTitle
      | path
      | rect
      | circle
@@ -186,7 +188,7 @@ desc =
         attribute viewport-fill-opacity { "inherit" | xsd:string }?)),
     text
   }
-title =
+svgTitle =
   element title {
     (attribute id { xsd:NCName }
      | attribute xml:id { xsd:NCName })?,
@@ -333,7 +335,7 @@ path =
     attribute pathLength { xsd:string }?,
     attribute style { xsd:string }?,  # Added to SVG-1.2-RFC (Inkscape)
     (desc
-     | title)*
+     | svgTitle)*
   }
 rect =
   element rect {
@@ -419,7 +421,7 @@ rect =
     attribute ry { xsd:string }?,
     attribute style { xsd:string }?,  # Added to SVG-1.2-RFC (Inkscape)
     (desc
-     | title)*
+     | svgTitle)*
   }
 circle =
   element circle {
@@ -502,7 +504,7 @@ circle =
     attribute r { xsd:string }?,
     attribute style { xsd:string }?,  # Added to SVG-1.2-RFC (Inkscape)
     (desc
-     | title)*
+     | svgTitle)*
   }
 line =
   element line {
@@ -585,7 +587,7 @@ line =
     attribute x2 { xsd:string }?,
     attribute y2 { xsd:string }?,
     (desc
-     | title)*
+     | svgTitle)*
   }
 ellipse =
   element ellipse {
@@ -669,7 +671,7 @@ ellipse =
     attribute cy { xsd:string }?,
     attribute style { xsd:string }?,  # Added to SVG-1.2-RFC (Inkscape)
     (desc
-     | title)*
+     | svgTitle)*
   }
 polyline =
   element polyline {
@@ -749,7 +751,7 @@ polyline =
     attribute systemLanguage { xsd:string }?,
     attribute points { xsd:string }?,
     (desc
-     | title)*
+     | svgTitle)*
   }
 polygon =
   element polygon {
@@ -830,7 +832,7 @@ polygon =
     attribute points { xsd:string }?,
     attribute style { xsd:string }?,  # Added to SVG-1.2-RFC (Inkscape)
     (desc
-     | title)*
+     | svgTitle)*
   }
 solidColor =
   element solidColor {
@@ -903,7 +905,7 @@ solidColor =
     attribute property { xsd:string }?,
     attribute xml:space { "default" | "preserve" }?,
     (desc
-     | title)*
+     | svgTitle)*
   }
 textArea =
   element textArea {
@@ -987,7 +989,7 @@ textArea =
     attribute height { xsd:string | "auto" }?,
     (tspan
      | desc
-     | title
+     | svgTitle
      | tspan_2
      | text
      | a_2)+
@@ -1068,7 +1070,7 @@ linearGradient =
     attribute x2 { xsd:string }?,
     attribute y2 { xsd:string }?,
     (desc
-     | title)*
+     | svgTitle)*
   }
 radialGradient =
   element radialGradient {
@@ -1145,7 +1147,7 @@ radialGradient =
     attribute cy { xsd:string }?,
     attribute r { xsd:string }?,
     (desc
-     | title)*
+     | svgTitle)*
   }
 \text =
   element text {
@@ -1228,7 +1230,7 @@ radialGradient =
     attribute rotate { xsd:string }?,
     attribute style { xsd:string }?,  # Added to SVG-1.2-RFC (Inkscape)
     (desc
-     | title
+     | svgTitle
      | tspan_2
      | text
      | a_2)+
@@ -1315,7 +1317,7 @@ g =
       "visible" | "hidden" | "collapse" | "inherit" }?,
         # Added to SVG-1.2-RFC (for LibreOffice)
     (desc
-     | title
+     | svgTitle
      | path
      | rect
      | circle
@@ -1404,7 +1406,7 @@ defs =
     attribute property { xsd:string }?,
     attribute xml:space { "default" | "preserve" }?,
     (desc
-     | title
+     | svgTitle
      | path
      | rect
      | circle
@@ -1508,7 +1510,7 @@ use =
     attribute x { xsd:string }?,
     attribute y { xsd:string }?,
     (desc
-     | title)*
+     | svgTitle)*
   }
 a =
   element a {
@@ -1597,7 +1599,7 @@ a =
       "_replace" | "_self" | "_parent" | "_top" | "_blank" | xsd:Name
     }?,
     (desc
-     | title
+     | svgTitle
      | path
      | rect
      | circle
@@ -1686,7 +1688,7 @@ stop =
     attribute xml:space { "default" | "preserve" }?,
     attribute offset { xsd:string }?,
     (desc
-     | title)*
+     | svgTitle)*
   }
 tspan =
   element tspan {
@@ -1767,7 +1769,7 @@ tspan =
     attribute y { xsd:string }?,
     (tbreak
      | desc
-     | title
+     | svgTitle
      | tspan_2
      | text
      | a_2)+
@@ -1850,7 +1852,7 @@ tspan_2 =
     attribute x { xsd:string }?,  # For SVG-1.2-RFC
     attribute y { xsd:string }?,
     (desc
-     | title
+     | svgTitle
      | tspan_2
      | text
      | a_2)+
@@ -1942,7 +1944,7 @@ a_2 =
       "_replace" | "_self" | "_parent" | "_top" | "_blank" | xsd:Name
     }?,
     (desc
-     | title
+     | svgTitle
      | tspan_2
      | text)+
   }
@@ -1969,3 +1971,5 @@ tbreak =
     attribute requiredFonts { xsd:string }?,
     attribute systemLanguage { xsd:string }?
   }
+
+#---  End of SVG 1.2 RFC rnc schema
