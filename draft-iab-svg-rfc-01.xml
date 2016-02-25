@@ -265,7 +265,7 @@
       for example Open Source packages Inkscape and Dia.
       Be aware that such packages may use SVG elements or attributes
       that are not allowed in SVG 1.2 RFC. 
-      <list style="format -"> 
+      <list style="symbols"> 
       <t>For example, the 'marker' attribute is often used to place
         symbols such as arrowheads on lines, but 'marker' is not allowed
         in SVG 1.2 Tiny or SVG 1.2 RFC.  In such cases one has to draw
