@@ -706,7 +706,7 @@ object 9;
 <back>
   <references title='Normative References'>
     <?rfc include="reference.RFC.6949"?> <!-- RFC Series Format Requirements -->
-    <!-- <?rfc include="reference.W3C.REC-SVGTiny12-20081222.xml"?> -->
+    <!-- include="reference.W3C.REC-SVGTiny12-20081222.xml"?> -->
     <reference anchor='W3C.REC-SVGTiny12-20081222'
       target='http://www.w3.org/TR/2008/REC-SVGTiny12-20081222'>
     <front>
@@ -738,7 +738,7 @@ object 9;
     <format type='HTML'
       target='http://www.w3.org/TR/2008/REC-SVGTiny12-20081222' />
     </reference>
-    <!-- <?rfc include="reference.W3C.REC-CSS2-20110607.xml"?> -->
+    <!-- include="reference.W3C.REC-CSS2-20110607.xml"?> -->
     <reference anchor='W3C.REC-CSS2-20110607'
       target='http://www.w3.org/TR/2011/REC-CSS2-20110607'>
       <front>
@@ -760,7 +760,7 @@ object 9;
     </reference>
   </references>
   <references title='Informative References'>
-    <!-- <?rfc include="reference.W3C.REC-SVG11-20110816.xml"?> -->
+    <!-- include="reference.W3C.REC-SVG11-20110816.xml"?> -->
     <reference anchor='W3C.REC-SVG11-20110816'
       target='http://www.w3.org/TR/2011/REC-SVG11-20110816'>
     <front>
