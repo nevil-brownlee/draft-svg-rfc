@@ -822,15 +822,13 @@ object 9;
     </reference>
     <reference anchor='XML2RFCv3'>
       <front>
-      <title>The XML2RFC version 3 Vocabulary</title>
-      <author initials='P' surname='Hoffman' fullname='Paul Hoffman'>
-	 <organization />
-      </author>
-      <date month='September 4' year='2015' />
+        <title>The "xml2rfc" version 3 Vocabulary</title>
+        <author initials="P." surname="Hoffman" fullname="Paul Hoffman"/>
+        <date month="February" year="2016"/>
       </front>
-      <seriesInfo name='Work in Progress,' value='draft-hoffman-xml2rfc-23'/>
+      <seriesInfo name="Internet-Draft" value="draft-iab-xml2rfc-03"/>
     </reference>
-    <reference anchor='This-I-D-with-SVG-included'>
+    <reference anchor='This-I-D-with-SVG-included' anchor="https://www.cs.auckland.ac.nz/~nevil/SVG_RFC_1.2">
       <front>
 	<title>Example html version of this I-D with its SVG diagrams included
 	</title>
@@ -853,9 +851,9 @@ object 9;
       <author initials='G' surname='Gus'>  <organization /> </author>
       <author initials='D' surname='Druta'>  <organization /> </author>
       <author initials='M' surname='Hafeez'>  <organization /> </author>
-      <date month='February 14' year='2014' />
+      <date month='February' year='2014' />
       </front>
-      <seriesInfo name='Work in Progress,'
+      <seriesInfo name='Internet-Draft'
 	  value='draft-loreto-httpbis-trusted-proxy20-01'/>
     </reference>
     <?rfc include="reference.RFC.4321"?>  <!-- SIP problems -->
